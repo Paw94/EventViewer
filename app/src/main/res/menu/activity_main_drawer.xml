@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_event_note"
+            android:title="All events" />
+        <item
+            android:id="@+id/nav_present"
+            android:icon="@drawable/ic_event_available"
+            android:title="Upcoming events" />
+        <item
+            android:id="@+id/nav_past"
+            android:icon="@drawable/ic_event_busy"
+            android:title="Past events" />
+    </group>
+
+    <item android:title="My Events">
+        <menu>
+            <item
+                android:id="@+id/nav_fav"
+                android:icon="@drawable/ic_favorite_filled"
+                android:title="Favorite events" />
+            <item
+                android:id="@+id/nav_joined"
+                android:icon="@drawable/ic_event"
+                android:title="Participations" />
+        </menu>
+    </item>
+
+</menu>
